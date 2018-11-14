@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<persistence version="2.0"
+        xmlns="http://java.sun.com/xml/ns/persistence"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://java.sun.com/xml/ns/persistence
+            http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+  
+   <persistence-unit name="DucatJPA1" transaction-type="RESOURCE_LOCAL">
+   		  <!--  <class>com.chahar.jpa.entity.Student101EntityBean</class>
+   		   <class>com.chahar.jpa.entity.EmployeeEntityBean</class>
+   		   <class>com.chahar.jpa.relationship.entity.StudentEntityBean</class>   -->
+   		    <!-- <class>com.chahar.jpa.relationship.entity.DepartmentEntityBean</class>
+   		   <class>com.chahar.jpa.relationship.entity.StudentEntityBean</class> -->
+   		    <!-- <class>com.chahar.jpa.relationship.entity.StudentEntityBean2</class>
+   		   <class>com.chahar.jpa.relationship.entity.DepartmentEntityBean2</class> -->
+   		  <!--  <class>com.chahar.jpa.entity.onetomany.ArtistEntityBean</class>
+   		   <class>com.chahar.jpa.entity.onetomany.AlbumEntityBean</class> -->
+   		  <!--  <class>com.chahar.jpa.entity.manytomany.ArtistEntity</class>
+   		   <class>com.chahar.jpa.entity.manytomany.GenreEntity</class> -->
+   		   <class>com.chahar.jpa.poc7.inheritance.singletable.StaffEntity1</class>
+   		   <class>com.chahar.jpa.poc7.inheritance.singletable.TeachingStaffEntity1</class>
+   		   <class>com.chahar.jpa.poc7.inheritance.singletable.NonTeachingStaffEntity1</class>
+   		   <class>com.chahar.jpa.poc7.inheritance.joined.StaffEntity2</class>
+   		   <class>com.chahar.jpa.poc7.inheritance.joined.TeachingStaffEntity2</class>
+   		   <class>com.chahar.jpa.poc7.inheritance.joined.NonTeachingStaffEntity2</class>
+   		   <class>com.chahar.jpa.poc7.inheritance.tableperclass.StaffEntity3</class>
+   		   <class>com.chahar.jpa.poc7.inheritance.tableperclass.TeachingStaffEntity3</class>
+   		   <class>com.chahar.jpa.poc7.inheritance.tableperclass.NonTeachingStaffEntity3</class>
+   		    <class>com.chahar.jpa.poc7.inheritance.abstractclass.StaffEntity4</class>
+   		   <class>com.chahar.jpa.poc7.inheritance.abstractclass.TeachingStaffEntity4</class>
+   		   <class>com.chahar.jpa.poc7.inheritance.abstractclass.NonTeachingStaffEntity4</class>
+   		   
+	     <properties>
+		    <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+	        <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost/ducat2"/>
+	        <property name="javax.persistence.jdbc.user" value="yash"/>
+	        <property name="javax.persistence.jdbc.password" value="root1234"/>
+		       
+	       	<property name="eclipselink.logging.level" value="FINE"/>
+	       	<property name="eclipselink.logging.level.sql" value="FINE"/>
+			<property name="eclipselink.logging.parameters" value="true"/>
+			
+	       <property name="eclipselink.ddl-generation" value="create-or-extend-tables"/>
+	       
+	       	<!-- <property name="eclipselink.ddl-generation" value="create-tables"/> -->
+	       	<!-- <property name="eclipselink.ddl-generation" value="drop-and-create-tables"/> -->
+	     </properties>
+   </persistence-unit>
+   
+</persistence>
